@@ -1,0 +1,285 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f7f9;
+    margin: 20px;
+}
+
+.table-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow-x: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #2a9df4;
+    color: white;
+}
+
+thead th {
+    padding: 16px;
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e8f4fa;
+}
+
+tbody td {
+    padding: 14px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td:first-child {
+    font-weight: 600;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #2a9df4;
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.table-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.table-header button {
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.table-header button:hover {
+    background-color: #e84141;
+}
+
+/* Button Reset */
+button {
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Primary Button */
+.btn-primary {
+    background: linear-gradient(135deg, #1e90ff, #2a9df4);
+    color: white;
+    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.2);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1c86ee, #1e90ff);
+    box-shadow: 0 6px 18px rgba(30, 144, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Outline Button */
+.btn-outline {
+    background: transparent;
+    color: #1e90ff;
+    border: 2px solid #1e90ff;
+}
+
+.btn-outline:hover {
+    background: #1e90ff;
+    color: white;
+}
+
+/* Danger Button */
+.btn-danger {
+    background: linear-gradient(135deg, #ff6b6b, #ff4757);
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.2);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+    box-shadow: 0 6px 18px rgba(255, 107, 107, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Ghost Button */
+.btn-ghost {
+    background: transparent;
+    color: #2a9df4;
+    border: 1px dashed #2a9df4;
+}
+
+.btn-ghost:hover {
+    background: rgba(42, 157, 244, 0.1);
+    color: #2a9df4;
+}
+.postContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.postTitle {
+    font-size: 32px;
+    color: #2a9df4;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f4f7f9;
+    padding-bottom: 8px;
+}
+
+.postMeta {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.postMeta i {
+    color: #2a9df4;
+    font-style: italic;
+}
+
+.postContent {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.postContent a {
+    color: #1e90ff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.postContent a:hover {
+    color: #ff6b6b;
+}
+
+.postContent img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.editPostContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.editPostTitle {
+    font-size: 32px;
+    color: #2a9df4;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f4f7f9;
+    padding-bottom: 8px;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.formInput:focus {
+    border-color: #2a9df4;
+    outline: none;
+}
+
+.wysiwygEditor {
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    overflow: auto;
+    background: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.previewContent {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonPrimary {
+    background: #2a9df4;
+    color: white;
+}
+
+.buttonPrimary:hover {
+    background: #1e90ff;
+}
+
+.buttonCancel {
+    background: #ff6b6b;
+    color: white;
+    margin-top: 20px;
+}
+
+.buttonCancel:hover {
+    background: #ff4d4d;
+}
